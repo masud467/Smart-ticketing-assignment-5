@@ -42,7 +42,10 @@ for(const button of allButton){
         // console.log(numValue)
 
         totalPrice= totalPrice+ numValue
-        console.log(totalPrice)
+        const grandTotal = document.getElementById('grand-total');
+       
+        grandTotal.innerText = totalPrice
+        // console.log(totalPrice)
 
         document.getElementById('total-price').innerText=totalPrice
         
@@ -109,9 +112,9 @@ btn.addEventListener('click', function () {
         const getApplyBtn = document.getElementById('apply-btn')
         getApplyBtn.classList.add('hidden')
     }
-    else{
-        alert('Invalid Coupon code')
-    }
+    // else{
+    //     alert('Invalid Coupon code')
+    // }
 })
 
 
