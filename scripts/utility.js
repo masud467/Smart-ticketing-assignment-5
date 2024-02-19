@@ -1,9 +1,3 @@
-function getElementTextById(Id){
-    const element = document.getElementById(Id);
-    const elementText = element.innerText;
-    const elementValue = parseInt(elementText)
-}
-
 
 
 const allButton = document.getElementsByClassName('btn-show')
@@ -85,6 +79,7 @@ for(const button of allButton){
 const btn = document.getElementById('apply-btn');
 btn.addEventListener('click', function () {
     // console.log(btn)
+    
     const couponCode = document.getElementById('input-field').value
     // console.log(couponCode)
 
@@ -129,5 +124,11 @@ function showElementById(id){
     element.classList.remove('hidden')
 }
 
-
+// function handleButtonClick(){
+//     const element = document.getElementsByClassName('btn-show');
+//     element.classList.toggle('clicked')
+// }
+// document.getElementsByClassName('btn-show').addEventListener('click', function(){
+//     this.classList.add('bg-amber-500')
+// })
     
