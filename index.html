@@ -6,6 +6,7 @@
     <title>Smart Ticketing</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class=" w-[1171px] mx-auto">
     <!-- header section -->
@@ -155,24 +156,24 @@
                                 <div class="flex justify-around">
                                     <div class="flex items-center gap-4 ">
                                         <p>A</p>
-                                        <button class="btn px-8">A1</button>
-                                        <button class="btn px-8">A2</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">A1</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">A2</button>
                                     </div>
                                     <div class="space-x-4">
-                                        <button class="btn px-8">A3</button>
-                                        <button class="btn px-8">A4</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">A3</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">A4</button>
                                     </div>
                                 </div>
                                 <!-- B  -->
                                 <div class="flex justify-around">
                                     <div class="flex items-center gap-4 ">
                                         <p>B</p>
-                                        <button class="btn px-8">B1</button>
-                                        <button class="btn px-8">B2</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">B1</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">B2</button>
                                     </div>
                                     <div class="space-x-4">
-                                        <button class="btn px-8">B3</button>
-                                        <button class="btn px-8">B4</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">B3</button>
+                                        <button onclick="handleButtonClick(this)" class="btn btn-show px-8">B4</button>
                                     </div>
                                 </div>
                                 <!-- C -->
@@ -281,18 +282,21 @@
                            <div class="flex justify-around">
                                 <div>
                                   <p>seat <span id="seat-count" class="bg-green-400 px-1">0</span></p>
-                                  <p>C1</p>
-                                  <p>C2</p>
+                                  <div id="button-show">
+                                      
+                                   </div>
                                 </div>
                                 <div>
                                   <p>Class</p>
-                                  <p>Economoy</p>
-                                  <p>Economoy</p>
+                                  <div id="class-show">
+                                    
+                                  </div>
                                </div>
                                <div>
                                   <p>Price</p>
-                                  <p>550</p>
-                                  <p>550</p>
+                                  <div id="price-show">
+                                    
+                                  </div>
                                </div>
                            </div>
                            <hr>
