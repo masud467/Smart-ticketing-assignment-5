@@ -17,3 +17,15 @@ function disableAllButtons() {
 }
 
 
+function play(){
+    hideElementById('home-section')
+    showElementById('final-section')
+}
+
+
+function continueBtn(){
+    hideElementById('final-section')
+    showElementById('home-section')
+}
+
+
